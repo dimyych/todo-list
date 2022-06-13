@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="list">
+        <div class="list__tasks">
+            <h2 class="list__inner-title">Список завдань</h2>
+            <div class="list__inner" onclick="delet()">
+                
+            </div>
+
+        </div>
+        <div class="list__add-task">
+            <h2 class="list__inner-title">Додати нове завдення</h2>
+            <input class="list__iput" type="text">
+            <button class="list__btn">Додати</button>
+        </div>
+        <div class="warning warning-active warning-addTask">
+            <h2>Попередженя!</h2>
+            <p>Пусте поле не можна добавити.</p>
+            <img class="warning-addTask__close" src="./close.png" alt="">
+        </div>
+        <div class="warning warning-active warning-tasks">
+            <h2>Попередженя!</h2>
+            <p>Останній текст зі списку Ви не можете видалити.</p>
+            <img class="warning-tasks__close" src="./close.png" alt="">
+        </div>
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

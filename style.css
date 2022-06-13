@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list {
+    height: 800px;
+    width: 1400px;
+    background-image: url(./Безымянный.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+}
+
+.list * {
+    padding: 10px;
+}
+
+.list__tasks {
+    width: 425px;
+    height: 541px;
+    position: absolute;
+    top: 45px;
+    left: 310px;
+    padding: 20px;
+}
+
+.list__add-task {
+    width: 425px;
+    height: 541px;
+    position: absolute;
+    top: 45px;
+    left: 746px;
+    padding: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.list__inner-title {
+    text-align: center;
+    color: rgb(255, 0, 0);
+
+}
+
+.list__inner {
+    font-size: 20px;
+}
+
+.list__inner * {
+    padding: 0;
+}
+
+.list__iput {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.list__btn {
+    display: block;
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 100px;
+    font-size: 15px;
+}
+
+.warning {
+    width: 750px;
+    height: 100px;
+    background-color: rgb(255, 180, 109);
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    left: 336px;
+    top: 113px;
+}
+
+.warning * {
+    padding: 0;
+}
+
+.warning h2 {
+    margin-bottom: 10px;
+}
+
+.warning img {
+    width: 15px;
+    height: 15px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.warning-active {
+    display: none;
+}
+
+.task {
+    margin-bottom: 15px;
+}
+
+.task::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-bottom: -4px;
+  }
+.task:checked::before{
+    background: rgb(255, 255, 255);
+}
+
